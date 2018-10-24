@@ -65,7 +65,6 @@
 						.sub
 							+pad(2rem 0)
 							.input-group
-								// border: 2px solid color-get($mau,trang)
 								border-radius: 2px
 								input, button
 									+bor-rad(0)
@@ -87,20 +86,12 @@
 										+opacity(.4)
 									+media-breakpoint-down(lg)
 										margin-bottom: .5rem
-								button									
+								button
 									text-transform: uppercase
 									background: #ff6868
-									border-radius: 8px		
-									padding-left: 2.29rem							
-									padding-right: 2.29rem							
-									// &:after
-									// 	content: ''
-									// 	display: block
-									// 	min-height: 50%
-									// 	width: 1px
-									// 	background: color-get($mau,trang)
-									// 	+pos(abs, 50% null null -.5rem)
-									// 	+transform(translateY(-50%))
+									border-radius: 8px
+									padding-left: 2.29rem
+									padding-right: 2.29rem
 									&:focus, &:active, &:hover
 										background: rgba(red(color-get($mau,trang)),green(color-get($mau,trang)),blue(color-get($mau,trang)),.3)
 										outline: none
