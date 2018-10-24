@@ -1,0 +1,45 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-carousel-3
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(6.57rem 0)
+	.h2
+		+fw(300)
+		+fz(2.71rem)
+	.service-list
+		.item
+			display: flex
+			text-decoration: none
+			height: 100%
+			overflow: hidden
+			figure
+				position: relative
+				overflow: hidden
+				img
+				figcaption
+					padding: 1rem
+					h3
+						+fz(1.71rem)
+						+fw(400)
+						color: #3a424c
+					p
+						font-family: 'Gentium Book Basic', serif
+						+fz(1rem)
+						color: #99a0a8
+						line-height: 1.14rem
+						+fz(1rem)
+						margin-bottom: 0
+			&:hover
+				figure
+					// background: darken(color-get($mau,trang) ,7%)
+					img
+						// +opacity(.7)
+					figcaption
+						h3
+							color: darken(color-get($mau,extra),0%)
+						p
+							color: darken(color-get($mau,trang) ,70%)
