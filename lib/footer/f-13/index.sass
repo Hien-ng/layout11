@@ -1,8 +1,14 @@
 @import ../../_includes
 
 .canhcam-footer-13
+	background-color: #38404a
 	.footer-content
-		+pad(3rem null)
+		+media-breakpoint-up(md)
+			padding-top: 4.57rem
+			padding-bottom: 4.57rem
+		+media-breakpoint-down(sm)
+			padding-top: 2rem
+			padding-bottom: 2rem
 		color: lighten(color-get($mau,main), 0%)
 		+fw(500)
 		position: relative
@@ -11,53 +17,57 @@
 			margin-bottom: 1rem
 			+fw(600)
 		.slogan
-			.logo
-				a
-					display: block
-				img
-					max-width: 80px
+			+media-breakpoint-down(md)
+				text-align: center
 			.quote
 				font-size: .9rem
 				line-height: 1.5rem
-				.h6
+				img
+					max-height: 2rem
+				hr
+					background-color: #ffffff
+					+media-breakpoint-down(md)
+						margin: 1rem 2rem
 				.text
 					font-family: 'Gentium Book Basic', serif
 					+fz(.86rem)
 					+fw(400)
 					color: #99a0a8
+					p
+						margin-bottom: 0
 					span 
-						color: red
+						color: #ff6868
 		.social
-			ul
-				li
-					display: inline-block
-					+ li
-						margin-left: .75rem
-					a
-						width: 40px
-						height: 40px
-						background: darken(color-get($mau,extra),0%)
-						color: color-get($mau,trang)
-						display: block
-						text-align: center
-						+lh(40px)
-						+fz(1.5rem)
-						+bor-rad(50%)
-						transition: .3s all ease-in-out
-						&:hover
-							background: color-get($mau,main)
-	+media-breakpoint-up(md)
-		.slogan
-			.quote
-				padding-left: 2rem
-			.social-list
-				margin: 1rem 0 0 0
-	// Khi lên PC
-	+media-breakpoint-up(lg)
-		.footer-content
-			.list-group
-				.list-group-item
-					padding: .15rem 0
-			.slogan
+			+media-breakpoint-up(lg)
 				display: flex
-
+				justify-content: right
+				align-items: center
+			+media-breakpoint-down(md)
+				display: flex
+				justify-content: center
+				flex-direction: column
+				.landingpage-icon
+					margin-top: 1rem
+			.landingpage-icon
+				ul
+					margin-bottom: 0
+					li
+						a
+							color: #ff6868
+							+bor-rad(50%)
+							border: .15rem solid #ff6868
+							width: 1.79rem
+							height: 1.79rem
+							display: flex
+							justify-content: center
+							align-items: center
+							text-decoration: none
+							i
+								+fz(.71rem)
+							+media-breakpoint-up(md)
+								&:hover
+									background-image: -moz-linear-gradient( 90deg, rgb(61,69,79) 0%, rgb(255,104,104) 100%)
+									background-image: -webkit-linear-gradient( 90deg, rgb(61,69,79) 0%, rgb(255,104,104) 100%)
+									background-image: -ms-linear-gradient( 90deg, rgb(61,69,79) 0%, rgb(255,104,104) 100%)
+									color: #39414b
+									border: none
