@@ -14,11 +14,27 @@
 			color: #3a424c
 			margin-bottom: 4.4rem
 		.validator
-			.btn-more
-				background-color: #ff6868
-				color: #ffffff
-				+fz(.86rem)
-				+fw(700)
-				padding: 1rem 1.8rem
-				&:hover
-					background: #000000
+			.form-group
+				input,textarea
+					background-color: #e0e0e0
+					+fz(.86rem)
+					+fw(600)
+					+placeholder
+						color: #a2a2a2
+						+fw(700)
+					+bor-rad(3px)
+					border: none
+					+media-breakpoint-up(md)
+						&:focus, &:active, &:hover
+							// background: rgba(red(color-get($mau,trang)),green(color-get($mau,trang)),blue(color-get($mau,trang)),.3)
+							outline: none
+							+box-sha(none !important)
+							border: none
+				.btn-more
+					background-color: #ff6868
+					color: #ffffff
+					+fz(.86rem)
+					+fw(700)
+					padding: 1rem 1.8rem
+					&:hover
+						background: #000000
