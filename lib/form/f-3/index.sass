@@ -4,15 +4,20 @@
 //////////////////////////////////////
 
 .canhcam-form-3
-	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		padding-top: 6.43rem
+	+media-breakpoint-down(md)
+		padding-top: 3rem
+	+media-breakpoint-down(sm)
+		padding-top: 1rem
 	.info
 		h2
 			+fz(2.71rem)
 			+fw(300)
 			color: #3a424c
 			margin-bottom: 4.4rem
+			+media-breakpoint-down(md)
+				margin-bottom: 2rem
 		.validator
 			.form-group
 				input,textarea
@@ -30,6 +35,10 @@
 							outline: none
 							+box-sha(none !important)
 							border: none
+				input
+					height: 3.29rem
+				textarea
+					height: 18.29rem
 				.btn-more
 					background-color: #ff6868
 					color: #ffffff
@@ -37,4 +46,4 @@
 					+fw(700)
 					padding: 1rem 1.8rem
 					&:hover
-						background: #000000
+						background: #38404a
