@@ -4,11 +4,11 @@
 //////////////////////////////////////
 
 .canhcam-services-9
-	
 	background-image: url('../img/bg/bg-app-development_01.png')
 	background-position: center
 	background-repeat: no-repeat 
-	background-size: cover
+	// background-size: cover
+	margin-top: 6.2rem
 	+media-breakpoint-up(lg)
 		padding-top: .4rem
 		padding-bottom: 5rem
@@ -19,34 +19,36 @@
 		text-align: center
 	+media-breakpoint-down(xs)
 		margin-top: 1rem
-	.text-odd
-		margin-top: 6.2rem
-		.h3 
-			+fz(2.29rem)
-			+fw(800)
-			background: linear-gradient(to bottom, #ff6868 60%, #ffffff 100%)
-			-webkit-background-clip: text
-			-webkit-text-fill-color: transparent
-			text-transform: uppercase
-			position: relative
-		.lead
-			font-family: 'Gentium Book Basic', serif
-			+fz(1rem)
-			+fw(400)
-			color: #99a0a8	
-		.btn-more
-			background-color: #ff6868
-			color: #ffffff
-			+fz(.86rem)
-			+fw(700)	
-			text-transform: uppercase
-			border-radius: 8px
-			padding: 1.2rem 2rem
-		margin-bottom: 2rem
-	+media-breakpoint-up(lg)
-		.text 
-			padding-left: 2rem 
-			text-align: justify
+	.app-development
+		
 		.text-odd
-			text-align: justify
-			padding-right: 2rem 
+			
+			.h3 
+				+fz(2.29rem)
+				+fw(800)
+				background: linear-gradient(to bottom, #ff6868 60%, #ffffff 100%)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+				text-transform: uppercase
+				position: relative
+			.lead
+				font-family: 'Gentium Book Basic', serif
+				+fz(1rem)
+				+fw(400)
+				color: #99a0a8	
+			.btn-more
+				background-color: #ff6868
+				color: #ffffff
+				+fz(.86rem)
+				+fw(700)	
+				text-transform: uppercase
+				border-radius: 8px
+				padding: 1.2rem 2rem
+			margin-bottom: 2rem
+		+media-breakpoint-up(lg)
+			.text 
+				padding-left: 2rem 
+				text-align: justify
+			.text-odd
+				text-align: justify
+				padding-right: 2rem 
