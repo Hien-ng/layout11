@@ -4,11 +4,12 @@
 //////////////////////////////////////
 
 .canhcam-boxes-16
-	+media-breakpoint-up(md)
-		// margin-top: 2rem
+	+media-breakpoint-up(lg)
 		margin-bottom: 6.64rem
+	+media-breakpoint-down(md)
+		margin-top: 2rem
 	+media-breakpoint-down(sm)
-		// margin-top: 2rem
+		margin-top: 1rem
 		margin-bottom: 1.5rem
 	.h2
 		+fw(300)
@@ -22,6 +23,8 @@
 			margin-bottom: 1rem
 	.categorys
 		.box
+			+media-breakpoint-down(md)
+				margin-bottom: 1rem
 			.price
 				border: 1px solid #3b434d
 				border-bottom: 0
@@ -57,6 +60,11 @@
 					display: flex
 					flex-wrap: wrap
 					margin-bottom: 1rem
+					+media-breakpoint-down(md)
+						align-items: center
+						text-align: center
+						justify-content: center
+						display: flex
 					.icon
 						display: flex
 						width: 1.5rem
