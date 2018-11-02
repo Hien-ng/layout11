@@ -5,36 +5,66 @@
 
 .canhcam-slider-6
 	background-color: #38404a
-	padding: 4rem 0 
-	.swiper-container
-		width: 80%
-		.swiper-wrapper
-			.swiper-slide
-				min-height: 345px
-				width: 300px
-				// display: flex
-				justify-content: center
-				align-items: center
-				&.swiper-slide-active, 
-				&.swiper-slide-duplicate-active
-	.swiper-button-next-thumb,
-	.swiper-button-prev-thumb
-		min-height: 80px
-		+pos(abs, 50% null null null)
-		width: 10%
-		background-size: cover
-		display: none
-		img 
-			max-width: 100%
-	+media-breakpoint-up(md)
-		.swiper-button-prev-thumb
-			display: block
-			+transform(translateX(-20px) translateY(-50%))
-		.swiper-button-next-thumb
-			display: block
-			+transform(translateX(20px) translateY(-50%))
-			right: 0
-
-
-		
-
+	.boxes
+		padding-top: 4.43rem
+		padding-bottom: 4.43rem
+		+media-breakpoint-down(md)
+			text-align: center
+		.img
+		.title
+			.h2
+				+fw(800)
+				+fz(2.29rem)
+				background: linear-gradient(to bottom, #ff6868 60%, #3d454f 100%)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+				text-transform: uppercase
+				margin-bottom: 0
+			.h3
+				+fw(300)
+				+fz(1.71rem)
+				color: #ffffff
+				margin-bottom: 1.57rem !important
+			.text
+				color: #ffffff
+				+fz(1rem)
+				+fw(400)
+				margin-bottom: .86rem
+			.h4
+				color: #ffffff
+				+fw(700)
+				+fz(1rem)
+				.text-right
+					float: right
+					color: #ff6868
+			.progress
+				height: .29rem
+				.bg-more
+					height: .29rem
+					background: linear-gradient(to left, #ff6868, #3d454f 100%)
+			.landingpage-icon
+				margin-bottom: 1rem
+				+media-breakpoint-down(md)
+					display: flex
+					justify-content: center
+				ul
+					margin-bottom: 0
+					li
+						a
+							color: #ff6868
+							+bor-rad(50%)
+							border: .15rem solid #ff6868
+							width: 2.57rem
+							height: 2.57rem
+							display: flex
+							justify-content: center
+							align-items: center
+							text-decoration: none
+							i
+								+fz(1rem)
+							&:hover
+								background-image: -moz-linear-gradient( 90deg, rgb(61,69,79) 0%, rgb(255,104,104) 100%)
+								background-image: -webkit-linear-gradient( 90deg, rgb(61,69,79) 0%, rgb(255,104,104) 100%)
+								background-image: -ms-linear-gradient( 90deg, rgb(61,69,79) 0%, rgb(255,104,104) 100%)
+								color: #39414b
+								border: none

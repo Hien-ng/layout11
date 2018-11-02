@@ -8,39 +8,118 @@
 	+media-breakpoint-up(lg)
 		+pad(6.57rem 0)
 	.h2
-		font-family: 'Open Sans', sans-serif
 		+fw(300)
 		+fz(2.71rem)
+		position: relative
+		// margin-bottom: 2rem
+		span
+			display: block
+			width: 1rem
+			height: 1rem
+			border: 3px solid #ff6868
+			+pos(abs, calc(100% + 10px) null null calc(50% + 3px))
+			+transform(translateX(-50%))
+			border-radius: 50%
+			&:after
+				content: ''
+				display: inline-block
+				width: 1rem
+				height: .5rem
+				border: 5px solid #ffffff
+				top: 0
+				// +bor-rad(50%)
+				position: absolute
+				bottom: 50%
+				+transform(translateX(-50%) translateY(-50%))
+				// background: color-get($mau,trang)
+			// &:before
+			// 	content: ''
+			// 	display: inline-block
+			// 	width: 1rem
+			// 	height: 1rem
+			// 	border: 3px solid color-get($mau,main)
+			// 	border-radius: 50%
+			// 	// +bor-rad(50%)
+			// 	+pos(abs, 50% null null 50%)
+			// 	+transform(translateX(-50%) translateY(-50%))
+			// 	background: color-get($mau,trang)
 	.service-list
-		.item
-			display: flex
-			text-decoration: none
-			height: 100%
-			overflow: hidden
-			figure
+		.boxes-1
+			+media-breakpoint-up(md)
+				// border-top: 2px dashed #000000
+				// border-right: 1.5px dashed #000000
+				padding-top: 2rem
+				margin-top: 2rem
+				border-color: #f1f3f5
+		.boxes-2
+			+media-breakpoint-up(md)
+				// border-top: 2px dashed #000000
+				border-left: 2px dashed #000000
+				padding-top: 2rem
+				margin-top: 2rem
+				border-color: #f1f3f5
+		.boxes-3
+			+media-breakpoint-up(md)
+				border-top: 2px dashed #000000
+				// border-right: 2px dashed #000000
+				border-left: 2px dashed #000000
+				padding-top: 5rem
+				border-color: #f1f3f5
+		.boxes-4
+			+media-breakpoint-up(md)
+				border-top: 2px dashed #000000
+				border-left: 2px dashed #000000
+				border-right: 2px dashed #000000
+				padding-top: 5rem
+				border-color: #f1f3f5
+		.boxes-5
+			.title_1
 				position: relative
-				overflow: hidden
-				img
-				figcaption
-					padding: 1rem
-					h3
-						+fz(1.71rem)
-						+fw(400)
-						color: #3a424c
-					p
-						font-family: 'Gentium Book Basic', serif
-						+fz(1rem)
-						color: #99a0a8
-						line-height: 1.14rem
-						+fz(1rem)
-						margin-bottom: 0
-			&:hover
-				figure
-					// background: darken(color-get($mau,trang) ,7%)
-					img
-						// +opacity(.7)
-					figcaption
-						h3
-							color: darken(color-get($mau,extra),0%)
-						p
-							color: darken(color-get($mau,trang) ,70%)
+				span
+					display: block
+					width: 1rem
+					height: 1rem
+					border: 3px solid #ff6868
+					+pos(abs, calc(-25% + 10px) null null calc(50% + 3px))
+					+transform(translateX(-50%) translateY(-50%))
+					border-radius: 50%
+					&:after
+						content: ''
+						display: inline-block
+						width: 1rem
+						height: .5rem
+						border: 5px solid #ffffff
+						top: 0
+						// +bor-rad(50%)
+						position: absolute
+						top: 100%
+						+transform(translateX(-50%) translateY(-50%))
+				.item
+					display: flex
+					text-decoration: none
+					height: 100%
+					overflow: hidden
+					figure
+						position: relative
+						overflow: hidden
+						img
+						figcaption
+							padding: 1rem
+							h3
+								+fz(1.71rem)
+								+fw(400)
+								color: #3a424c
+							p
+								+fz(1rem)
+								color: #99a0a8
+								line-height: 1.14rem
+								+fz(1rem)
+								margin-bottom: 0
+					&:hover
+						figure
+							img
+							figcaption
+								h3
+									color: darken(color-get($mau,extra),0%)
+								p
+									color: darken(color-get($mau,trang) ,70%)

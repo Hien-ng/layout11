@@ -4,9 +4,41 @@
 //////////////////////////////////////
 
 .canhcam-gallery-3
-	+pad(2rem 0 0 0)
-	+media-breakpoint-up(lg)
-		+pad(4rem 0 0 0)
+	.nav-gallery
+		+media-breakpoint-up(lg)
+			padding-top: 6.43rem
+			padding-bottom: 4.71rem
+		+media-breakpoint-down(md)
+			padding-top: 2rem
+			padding-bottom: 2rem
+		.h2 
+			+fz(2.71rem)
+			+fw(300)
+			+media-breakpoint-up(lg)
+				margin-bottom: 4.5rem
+			+media-breakpoint-down(md)
+				margin-bottom: 2rem
+		.nav-item
+			.nav-link
+				border: 1px solid #ffffff
+				background: #ffffff
+				color: #99a0a8
+				+fw(400)
+				+fz(1.12rem)
+				+bor-rad(8px)
+				margin-right: .5rem
+			&:last-child
+				.nav-link
+					margin-right: 0
+			&.active 
+				.nav-link
+					background: #ff6868
+					color: color-get($mau,trang)
+			&:hover 
+				.nav-link
+					background: #ffffff
+					color: #ff6868
+					border: 1px solid #ff6868
 	.gallery-details
 		.card-columns
 			+media-breakpoint-up(sm)
@@ -45,9 +77,6 @@
 								background: rgba(0,0,0,.5)
 								+transition(all .5s ease-in-out)
 								+transform(translateY(-100%))
-					// +media-breakpoint-up(sm)
-					// 	max-height: 200px
-					// 	min-height: 200px
 					img
 						+transition(all .5s ease-in-out)
 						width: 100%
@@ -63,10 +92,10 @@
 					+media-breakpoint-up(lg)
 						+opacity(0)
 					h3
-						font-family: 'Myriad Pro', sans-serif
-						+text-sha(1px 1px 3px rgba(0,0,0,.4))
+						// +text-sha(1px 1px 3px rgba(0,0,0,.4))
 						color: rgb(255, 104, 104)
-						+fz(1.21rem)
+						+fz(1.71rem)
+						+fw(800)
 						margin-bottom: 0
 					.buttom
 						i 
