@@ -37,6 +37,7 @@
     "linearicons": "1.0.1",
     "fancybox": "3.3.5",
     "jquery.scrollbar": "0.2.11",
-    "swiper": "4.3.5"
+    "swiper": "4.3.5",
+    "aos": "^2.3.4"
   }
 }

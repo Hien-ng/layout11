@@ -16,6 +16,7 @@
 		"@babel/core": "7.0.0-beta.51",
 		"@babel/preset-env": "7.0.0-beta.51",
 		"@fortawesome/fontawesome-free": "^5.2.0",
+		"aos": "^2.3.4",
 		"autoprefixer": "8.3.0",
 		"awesome-bootstrap-checkbox": "1.0.1",
 		"babel": "6.23.0",
