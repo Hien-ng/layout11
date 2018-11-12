@@ -18,8 +18,8 @@
             "bower_components/moment/min/moment.min.js",
             "bower_components/offline/offline.min.js",
             "bower_components/lodash/dist/lodash.min.js",
-			"bower_components/fancybox/dist/jquery.fancybox.min.js",
-			"bower_components/aos/dist/aos.js"
+            "bower_components/fancybox/dist/jquery.fancybox.min.js",
+            "bower_components/aos/dist/aos.js"
         ],
         "css_core": [
             "bower_components/k-responsive-menu/dist/css/k-responsive-menu.min.css",
@@ -30,8 +30,8 @@
             "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
             "bower_components/mdi/css/materialdesignicons.min.css",
             "bower_components/linearicons/dist/web-font/style.css",
-			"bower_components/fancybox/dist/jquery.fancybox.min.css",
-			"bower_components/aos/dist/aos.css"
+            "bower_components/fancybox/dist/jquery.fancybox.min.css",
+            "bower_components/aos/dist/aos.css"
         ],
         "js": [
             "bower_components/owl.carousel/dist/owl.carousel.min.js",
